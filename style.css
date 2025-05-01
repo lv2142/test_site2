@@ -1,0 +1,33 @@
+.hero_section{
+    background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGZpcnN0JTIwcGFydHxlbnwwfHx8fDE2ODQ5NTY1MjE&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center/cover;
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_section h1{
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero_section p{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero_section .btn{
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
