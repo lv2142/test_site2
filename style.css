@@ -1,26 +1,52 @@
-.hero_section{
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+width: 95%;
+display: block;
+margin-inline: auto;
+}
+
+.hero_section {
     background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGZpcnN0JTIwcGFydHxlbnwwfHx8fDE2ODQ5NTY1MjE&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center/cover;
-    height: 98vh;
+    height: 90vh;
+    padding: 20px;
+
+}
+
+.hero_content {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    margin-top: 50vh;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    
+    }
 
-.hero_section h1{
+.hero_content h1 {
     color: #fff;
-    font-size: 4rem;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    font-size: 4em;
 }
 
-.hero_section p{
+
+.hero_content p {
     color: #fff;
     font-size: 1.5rem;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
-.hero_section .btn{
+.hero_button {
+    display: inline-flex;
+    width: auto;
     background-color: #ff6347;
     color: #fff;
     padding: 10px 20px;
@@ -29,5 +55,63 @@
     font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.vision_section {
+    display: flex;
+    justify-content: center;    /* ✅ Horizontally center the .vision_content */
+    align-items: flex-start;    /* ✅ Vertically align to top for scrolling */
+    width: 100%;
+    height: 4rem;
+    overflow: hidden;
+    position: relative;
+  }
+   
+
+  .vision_content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;                /* ✅ Let children span full width for centering */
+    align-items: center;        /* ✅ Center each line inside the column */
+  }
+  
+
+.vision_title {
+    font-size: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    white-space: nowrap;
+    color: #333;
+    width: 100%;              /* ✅ Ensures the text fills the full container width */
+  }
+  
+
+.carousel_image {
+    max-width: 100%;
+    display: block;
+
+}
+
+.carousel_section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 5rem;
+    background-color: #ff6347;
+
+}
+
+.carousel_content {
+    display: grid;
+    grid-template-rows: subgrid;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 2rem;
+    text-align: left;
+    grid-row: span 3;
+
 }
 
